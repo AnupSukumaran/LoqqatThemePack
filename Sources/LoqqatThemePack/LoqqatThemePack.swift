@@ -68,3 +68,19 @@ public extension UIColor {
 
 }
 
+public extension UIViewController {
+
+    func iconColorSetter(imageView: UIImageView, img: UIImage, color: UIColor) {
+        if #available(iOS 13, *) {
+            if traitCollection.userInterfaceStyle == .dark {
+                imageView.image = img.withRenderingMode(.alwaysTemplate)
+                imageView.tintColor = color
+            } else {
+                imageView.image = img
+            }
+        } else {
+            imageView.image = img
+        }
+    }
+    
+}
