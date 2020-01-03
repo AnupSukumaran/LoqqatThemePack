@@ -52,7 +52,7 @@ public extension UIColor {
     }
     
     static var appColor: UIColor {
-        return #colorLiteral(red: 0.537254902, green: 0.1058823529, blue: 0.3058823529, alpha: 1)
+        return #colorLiteral(red: 1, green: 0.8901960784, blue: 0.1098039216, alpha: 1)
     }
     
     static func setColors(dark: UIColor, light: UIColor) -> UIColor {
